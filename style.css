@@ -1,0 +1,60 @@
+@charset "utf-8";
+/*————————————————————————————————*/
+/* Reset */
+/*————————————————————————————————*/
+* {
+  all: unset;
+  unicode-bidi: normal;
+  direction: ltr;
+}
+
+/*————————————————————————————————*/
+/* Display */
+/*————————————————————————————————*/
+head, link, meta, style, title, script {
+  display: none;
+}
+html, body, p, form {
+  display: block;
+}
+input {
+  display: inline-block;
+}
+
+/*————————————————————————————————*/
+/* Style */
+/*————————————————————————————————*/
+html {
+  height: 100vh;
+  background-color: rgb(15, 30, 60);
+  background-image: linear-gradient(to top, rgb(10, 20, 40) 0%, rgb(20, 40, 80) 100%);
+}
+input {
+  font-family: "Orbitron", sans-serif;
+  font-weight: 900;
+  margin: 20px 0;
+  width: 100%;
+  height: 50px;
+  border-radius: 25px;
+  color: rgb(200, 210, 240);
+  background-color: rgb(10, 20, 40);
+  font-size: 40px;
+}
+input::placeholder {
+  font-family: "Orbitron", sans-serif;
+  color: rgb(20, 40, 80);
+}
+form {
+  text-align: center;
+  margin: calc(50vh - 100px) auto 0;
+  max-width: 400px;
+  width: 90vw;
+}
+p {
+  overflow-wrap: break-word;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 40px;
+  color: rgb(200, 210, 240);
+}
